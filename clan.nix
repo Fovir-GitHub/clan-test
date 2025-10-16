@@ -80,9 +80,9 @@
       pkgs,
       ...
     }: {
-      users.users.root.openssh.authorizedKeys.keys = [
-        "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIBFvfwOrz294r8TnRxnoHFHdg0ZghU5JoXExPouLIrHp fovir@disroot.org"
-      ];
+      # users.users.root.openssh.authorizedKeys.keys = [
+      #   "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIBFvfwOrz294r8TnRxnoHFHdg0ZghU5JoXExPouLIrHp fovir@disroot.org"
+      # ];
     };
   };
 }
