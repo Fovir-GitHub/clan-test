@@ -2,7 +2,7 @@
   networking = {
     useDHCP = lib.mkForce false;
 
-    interfaces.eth0 = {
+    interfaces.ens3 = {
       ipv4.addresses = [
         {
           address = "173.249.210.199";
@@ -20,12 +20,12 @@
 
     defaultGateway = {
       address = "173.249.210.1";
-      interface = "eth0";
+      interface = "ens3";
     };
 
     defaultGateway6 = {
       address = "2607:9000:800:5000::1";
-      interface = "eth0";
+      interface = "ens3";
     };
   };
 }
