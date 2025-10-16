@@ -1,12 +1,11 @@
 # ---
 # schema = "single-disk"
 # [placeholders]
-# mainDisk = "/dev/disk/by-path/pci-0000:04:00.0" 
+# mainDisk = "/dev/disk/by-path/pci-0000:04:00.0"
 # ---
 # This file was automatically generated!
 # CHANGING this configuration requires wiping and reinstalling the machine
 {
-
   boot.loader.grub.efiSupport = true;
   boot.loader.grub.efiInstallAsRemovable = true;
   boot.loader.grub.enable = true;
@@ -14,7 +13,7 @@
     disk = {
       main = {
         name = "main-8e4c07bb09114654b9743f6208631d09";
-        device = "/dev/disk/by-path/pci-0000:04:00.0";
+        device = "/dev/disk/by-path/pci-0000:00:07.0";
         type = "disk";
         content = {
           type = "gpt";
@@ -31,7 +30,7 @@
                 type = "filesystem";
                 format = "vfat";
                 mountpoint = "/boot";
-                mountOptions = [ "umask=0077" ];
+                mountOptions = ["umask=0077"];
               };
             };
             root = {
